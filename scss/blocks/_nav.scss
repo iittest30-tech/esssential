@@ -1,0 +1,117 @@
+@keyframes burger {
+    0%{
+        top:-150%;
+    }
+    100%{
+        top: 110px;
+    }
+
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-right: 33px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__item-link {
+    text-transform: uppercase;
+    font-family: "Barlow";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.92px;
+    color: $gray;
+
+    &:hover {
+        color: $dark-gray-blue;
+    }
+}
+
+.nav__mobile {
+    position: absolute;
+     display: none;
+     top: -150%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: calc(100vh - 110px);
+    text-align: center;
+    transition: 400ms ease all;
+
+}
+.nav--footer{
+    margin-left: 102px;
+    .nav__item-link{
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+
+@media only screen and (max-width:920px){
+    .nav--footer{
+        margin: 0;
+    }
+}
+@media only screen and (max-width:615px) {
+    .nav {
+        display: none;
+    }
+    .nav--footer{
+        display: block;
+        .nav__list{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .nav__item{
+            margin: 0;
+            margin-bottom: 24px;
+        }
+    }
+
+    .nav__mobile--active {
+        position: absolute;
+        display: block;
+        top: 110px;
+        background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+        animation: burger 500ms ease-in;
+    }
+
+    .nav__mobile-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .nav__mobile-item {
+        margin-bottom: 32px;
+    }
+
+    .nav__mobile-item-link {
+        color: $dark-gray-blue;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+
+    }
+
+}
+
+@media only screen and (max-width:$mobile) {
+    .nav__mobile--active {
+        top: 94px;
+    }
+}

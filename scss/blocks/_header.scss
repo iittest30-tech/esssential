@@ -1,0 +1,30 @@
+.header{
+    padding: 43px 0;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.header__container{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (max-width:$tablet){
+    .header{
+        padding: 40px 0;
+    }
+    .header__container{
+        padding: 0 40px;
+    }
+}
+@media only screen and (max-width:$mobile){
+   .header{
+   padding: 32px 0;
+   }
+   .header__container{
+    padding: 0 24px;
+   }
+}

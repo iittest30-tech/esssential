@@ -1,0 +1,30 @@
+.hamburger{
+    display: none;
+    width: 16px;
+    height: 15px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hamburger--about{
+    display: none;
+    width: 16px;
+    height: 15px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hamburger--opened{
+    background-image: url(../../img/hamburger.png);
+}
+.hamburger--closed{
+    background-image: url(../../img/x.png);
+}
+
+@media only screen and (max-width:615px){
+    .hamburger{
+        display: inline-block;
+    }
+}

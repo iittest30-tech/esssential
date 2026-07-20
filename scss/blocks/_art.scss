@@ -1,0 +1,41 @@
+
+.art__info{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.art__info img{
+    flex-shrink: 0;
+    width: 470px;
+}
+.art__content{
+    display: flex;
+    flex-direction: column;
+}
+.art__title{
+    @include title40("dark");
+    margin-bottom: 24px;
+}
+.art__text{
+    @include textBarlow("dark");
+}
+
+@media only screen and (max-width:$tablet){
+    .art__info{
+        gap: 40px;
+    }
+    .art__info img{
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .art__info{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .art__info img{
+        width: 100%;
+    }
+}

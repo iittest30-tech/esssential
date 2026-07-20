@@ -1,0 +1,20 @@
+.create-link {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $light-cream;
+    background-color: $dark-cyan;
+    padding: 15px 31px 16px 31px;
+    border-radius: 6px;
+    border: none;
+    &:hover{
+        background-color: rgba(102, 210, 207, 1);
+        cursor: pointer;
+    }
+    &:disabled{
+        background-color: rgba(226, 222, 219, 1);
+        cursor:not-allowed;
+    }
+}

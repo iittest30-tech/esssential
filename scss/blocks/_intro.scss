@@ -1,0 +1,69 @@
+.intro{
+    margin-bottom: 136px;
+    margin-top: 116px;
+}
+.intro__container{
+    padding-top: 117px;
+    padding-bottom: 117px;
+    background: url(../../img/intro.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.intro__container-about{
+    padding-top: 117px;
+    padding-bottom: 117px;
+    background: url(../../img/blackkofe.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.intro__container-creat{
+    padding-top: 117px;
+    padding-bottom: 117px;
+    background: url(../../img/sugar.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.intro__box{
+    max-width: 493px;
+
+}
+.intro__slogan{
+    @include fraunces72("light");
+    margin-bottom: 32px;
+}
+.intro__text{
+    @include textBarlow("light");
+    opacity: 0.6;
+    margin-bottom: 71px;
+}
+@media only screen and (max-width:$tablet){
+    .intro__container{
+        padding: 104px 58px;
+        margin: 0 40px;
+    }
+    .intro__box{
+        max-width: 398px;
+    }
+    .intro__slogan{
+        @include title48("light")
+    }
+    .intro__text{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:$mobile){
+    .intro__container{
+        padding: 100px 24px;
+    }
+    .intro__container{
+        margin: 0 24px;
+    }
+    .intro__box{
+        max-width: 100%;
+        text-align: center;
+    }
+    .intro__slogan{
+        @include title40("light");
+        margin-bottom: 24px;
+    }
+}

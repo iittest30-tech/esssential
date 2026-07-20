@@ -1,0 +1,173 @@
+ .choose {
+     margin-bottom: 200px;
+ }
+
+ .Choose__container {
+     width: 1280px;
+     background-color: #1F2833;
+     border-radius: 10px;
+     padding: 100px 40px;
+     margin: 0 auto;
+ }
+
+ .choose__position {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .Choose__title {
+     max-width: 400px;
+    margin-bottom: 24px;
+    color: #FEFCF7;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+ }
+
+ .Choose__title-text {
+    max-width: 540px;
+    margin-bottom: 64px;
+    color: #FEFCF7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+ }
+
+ .choose__list {
+      display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ .choose__item {
+   width: 350px;
+    background-color: #0D8285;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 48px 32px;  
+
+ }
+
+.choose__span {
+     display: block;
+    width: 72px;
+    height: 72px;
+    background-image: url(../../img/cacao.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 24px;
+ }
+
+.Choose__item-title {
+    @include fraunces72("light");
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 16px 0;
+}
+
+ .Choose__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+}
+
+@media only screen and (max-width: #{$tablet}) {
+    .Choose__container {
+        width: 688px;
+        height: 573px;
+    }
+
+    .Choose__title {
+        margin: 0;
+        margin-left: 212px;
+        margin-bottom: 24px;
+    }
+
+    .Choose__title-text {
+        margin: 0;
+        margin-left: 74px;
+        margin-bottom: 70px;
+    }
+
+    .choose__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .choose__duo {
+        display: flex;
+        flex-direction: column;
+        color: #FEFCF7;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 160px;
+    }
+
+    .choose__item {
+        width: 575px;
+        height: 180px;
+    }
+
+    .Choose__item-text {
+        width: 344px;
+    }
+}
+
+@media only screen and (max-width: #{$mobile}) {
+    .Choose__container {
+        width: 327px;
+        height: 902px;
+    }
+
+    .Choose__title {
+        margin: 0;
+        margin-left: 212px;
+        margin-bottom: 24px;
+    }
+
+    .Choose__title-text {
+        margin: 0;
+        margin-left: 74px;
+        margin-bottom: 70px;
+    }
+
+    .choose__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .choose__duo {
+        display: flex;
+        flex-direction: column;
+        color: #FEFCF7;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 160px;
+    }
+
+    .choose__item {
+        width: 575px;
+        height: 180px;
+    }
+
+    .choose__item:first-child {
+        margin: 0;
+    }
+
+    .Choose__item-text {
+        width: 344px;
+    }
+}
